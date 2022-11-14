@@ -49,7 +49,7 @@ const addNewTask = () => {
     todoInput.value = ""
     errorInfo.textContent = ""
   } else {
-    errorInfo.textContent = "Wpisz treść zadania!"
+    errorInfo.textContent = "Enter the task name!"
   }
 }
 
@@ -102,7 +102,7 @@ const changeTodoText = () => {
     popupInfo.textContent = ""
     popup.style.display = "none"
   } else {
-    popupInfo.textContent = "Podaj nazwę!"
+    popupInfo.textContent = "Enter the task name!"
   }
 }
 
@@ -111,7 +111,7 @@ const deleteTodo = (e) => {
 
   const allTodos = document.querySelectorAll("li")
   if (allTodos.length == 0) {
-    errorInfo.textContent = "Brak zadań na liście."
+    errorInfo.textContent = "No tasks in the list."
   }
 }
 
